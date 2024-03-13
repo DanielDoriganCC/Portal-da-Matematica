@@ -1,0 +1,231 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+}
+
+
+#main{
+    display: flex;
+    flex-direction: column; 
+}
+
+
+.divisoria{
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    border-bottom: 1px solid #FAF8F9;
+
+    
+    /* background-image: url("../../imgs/274375.png"); */
+}
+
+.boxTitulo{
+    width:50%;
+    /* height: 40%; */
+    margin-top: 20vh;
+
+    align-items: flex-end;
+    display: flex;
+
+    margin-left: 5vw;
+}
+
+.titulo{
+    font-size: 4rem;
+    margin-bottom: 0;
+
+    background: linear-gradient(to right, rgb(60, 132, 233), rgb(17, 227, 213)); /* ou cor neutra ou cor específica para cada */
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important; /* sem isso fica bonito tbm */
+}
+
+.boxTexto{
+    width:50%;
+    height: 60%;
+
+    margin-left: 5vw;
+}
+
+.texto{
+    margin-top: 1%;
+    font-size: 1.35rem;
+    color: aliceblue;
+    text-align: justify;
+}
+
+/*  */
+
+#introducao{
+    background: linear-gradient(320deg, var(--azul) 4% 4%, #09375d 22% 22% ,  var(--escuro) 60% 48%);
+}
+
+/*  */
+
+#batePapo{
+    background: linear-gradient(320deg, var(--vermelho) 14% 12%, #790101 23% 23%, var(--escuro) 60% 48%);
+}
+
+#boxChat{ /* Aplicar glassmorphism */
+    width: calc(29vh + 41px);
+    height: calc(50vh + 86px);
+
+    position: absolute;
+    left: 68vw;
+    bottom: -560px;
+
+
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    display: flex;
+    flex-direction: column;
+    
+    overflow: hidden;
+}
+
+#boxChat .mensagem:nth-child(1){
+    margin-top: 8%;
+}
+
+
+
+.mensagem{
+    /* width: 20%; */
+    /* height: 10%; */
+
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    padding: 3%;
+
+    max-width: 50%;
+    width: fit-content;
+
+    background-color: var(--azul);
+    border-radius: 0.35rem;
+}
+
+.msgDireita{
+    align-self: flex-end;
+    background-color: var(--cinza);
+}
+
+/* Características abaixo definem comportamento de entrada das mensagens */
+
+.mensagem {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1.6s, transform 1.6s;
+}
+
+.msgDireita{
+    transform: translateX(100%);
+}
+
+.msgVisivel {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/*  */
+
+
+#calculadora{
+    background: linear-gradient(320deg, var(--amarelo) 14% 12%, #9b9432 28% 23%,var(--escuro) 60% 48%);
+}
+
+/*  */
+
+#exercicios{
+    background: linear-gradient(320deg, var(--verde) 14% 12%, #05720a 23% 23%, var(--escuro) 60% 48%);
+}
+
+#estudos{
+    background: linear-gradient(320deg, var(--vermelho) 14% 12%, #790101 23% 23%, var(--escuro) 60% 48%);
+
+}
+
+
+
+footer{
+    width: 100%;
+    height: 10vh;
+
+    background-color: var(--escuro);
+
+    padding: 2%;
+
+    color: var(--claro) !important; 
+
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    color: var(--amarelo) !important; 
+}
+
+
+a{
+    text-decoration: none !important;
+    /* color: var(--amarelo) !important;  */
+}
+
+
+#textoFooter{
+    padding: 0.5%;
+    padding-left: 1%;
+}
+
+#boxLogoFooter{
+    height: 100%;
+    margin-right: 3%;
+}
+
+#boxLogoFooter img{
+    height: 100%;
+}
+
+
+
+
+
+
+.bloco{
+    width: 100px;
+    height: 100px;
+}
+
+#azul{
+    background-color: #0e88eb;
+}
+
+#amarelo{
+    background-color: #ffef16;
+    
+}
+
+#verde{
+    background-color: #0ce217;
+
+}
+
+#vermelho{
+    background-color: #e11a1a;
+
+}

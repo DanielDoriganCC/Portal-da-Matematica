@@ -1,0 +1,104 @@
+
+#header{ 
+    background: linear-gradient( 45deg, var(--azul), var(--azulEscuro) ) ;
+
+    height: 11vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: space-between;
+
+    position: fixed;
+
+    border-bottom: 3px solid var(--claro);
+
+    transition: 0.5s;
+
+    z-index: 10;
+}
+
+#logoContainer{
+    height: 100%;
+    width: 20vw;
+
+    display: flex;
+    align-items: center;
+}
+
+#logoContainer a {
+    height: 100%;
+    width: 100%;
+}
+
+#logo{
+    /* width: 85%; */
+
+    height: 100%;
+
+}
+
+#navLinks{
+    /* background-color: #0ce217; */
+    height: 100%;
+    width: 50%;
+
+    padding: 0;
+    margin: 0;
+
+    gap: 5%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#navLinks li{
+    list-style: none;
+    font-size: 1.5rem;
+    font-family: math;
+}
+
+#navLinks li a{
+    color: var(--claro);
+
+    position: relative;
+    display: flex;
+
+    text-decoration: none;
+}
+
+/* 
+#navLinks li a:visited{
+    
+} */
+
+#navLinks li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--claro);
+    transform: scaleX(0); /* Inicalmente de tamanho nulo */
+    transform-origin: bottom right;
+    transition: transform 0.5s ease;
+}
+
+#navLinks li a:hover::before {
+    transform: scaleX(1); /* Tamanho máximo no hover */
+    transform-origin: bottom left;
+}
+
+#navLinks li a:active{
+    color: var(--vermelhoEscuro)
+}
+
+
+
+#pfpContainer{
+    background-color: pink;
+    height: 100%;
+    width: 20vw;
+}

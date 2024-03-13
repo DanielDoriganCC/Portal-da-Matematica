@@ -1,0 +1,50 @@
+Melhor definir tema e estilo do site
+
+Tema: Matemática
+
+Estilo: construtivismo +-
+        moderno
+        geométrico
+
+Inspirações: 
+
+https://alphamark.design/
+
+
+------------------------------------------------
+
+Banco de dados:
+    - Criar diagrama 
+    - Criar banco de dados
+
+Node:
+    -Criar node da sala de bate papo, função mandar msg e como o server distribui
+
+Site:
+    - Melhorias estéticas
+    - Melhorias funcionais
+
+Partes a fazer:
+    - Sala de Bate papo <foco>
+    - ...
+
+
+Site > Melhorias estéticas:
+
+- Melhorar footer
+- Melhorar header e criar menu ?
+- Cinematic Scroll
+- Melhorar introdução -> parte "portal da matemática"
+- Cena introdutória e de carregamento
+- Fundo semiDetalhado -> papel quadriculado?
+
+- detalhe especial em cada segmento
+- inverter lado?
+
+- parte de assinar seu nome no site, livro de visitas
+
+Site > melhorias funcionais:
+
+- Botão em cada segmento do index de acesso até a página
+- Menu de botões na introdução (a não ser que não caiba)
+- Login e sign in de usuário
